@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 set(PROJECT_NAME
-        lokblocks)
+        SevaBitBlocks)
 
 
 project(${PROJECT_NAME})
@@ -14,17 +14,17 @@ endif()
 
 
 if (NOT LOKI_DIR)
-    set(LOKI_DIR ~/loki)
+    set(LOKI_DIR ~/sevabit)
 endif()
 
 message(STATUS LOKI_DIR ": ${LOKI_DIR}")
 
 set(LOKI_SOURCE_DIR ${LOKI_DIR}
-        CACHE PATH "Path to the root directory for Loki")
+        CACHE PATH "Path to the root directory for SevaBit")
 
-# set location of loki build tree
-set(LOKI_BUILD_DIR ${LOKI_SOURCE_DIR}/build/release/
-        CACHE PATH "Path to the build directory for Loki")
+# set location of sevabit build tree
+set(LOKI_BUILD_DIR ${LOKI_SOURCE_DIR}/build
+        CACHE PATH "Path to the build directory for SevaBit")
 
 set(MY_CMAKE_DIR "${CMAKE_CURRENT_LIST_DIR}/cmake"
         CACHE PATH "The path to the cmake directory of the current project")
@@ -32,11 +32,11 @@ set(MY_CMAKE_DIR "${CMAKE_CURRENT_LIST_DIR}/cmake"
 list(APPEND CMAKE_MODULE_PATH "${MY_CMAKE_DIR}")
 
 set(CMAKE_LIBRARY_PATH ${CMAKE_LIBRARY_PATH} "${LOKI_BUILD_DIR}"
-        CACHE PATH "Add Loki directory for library searching")
+        CACHE PATH "Add SevaBit directory for library searching")
 
 include(MyUtils)
 
-find_package(Loki)
+find_package(SevaBit)
 
 # find boost
 find_package(Boost COMPONENTS

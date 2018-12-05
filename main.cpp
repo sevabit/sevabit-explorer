@@ -99,7 +99,7 @@ main(int ac, const char* av[])
     bool show_cache_times             {*show_cache_times_opt};
 
 
-    // set  loki log output level
+    // set  sevabit log output level
     uint32_t log_level = 0;
     mlog_configure("", true);
 
@@ -197,12 +197,12 @@ main(int ac, const char* av[])
     {
         // This starts new thread, which aim is
         // to calculate, store and monitor
-        // current total Loki emission amount.
+        // current total SevaBit emission amount.
 
         // This thread stores the current emission
         // which it has caluclated in
         // <blockchain_path>/emission_amount.txt file,
-        // e.g., ~/.loki/lmdb/emission_amount.txt.
+        // e.g., ~/.sevabit/lmdb/emission_amount.txt.
         // So instead of calcualting the emission
         // from scrach whenever the explorer is started,
         // the thread is initalized with the values
@@ -358,7 +358,7 @@ main(int ac, const char* av[])
         return lokblocks.render_quorum_states_html(true /*add_header_and_footer*/);
     });
 
-    // TODO(loki): This should be combined into the normal search mechanism, we shouldn't have 2 search bars.
+    // TODO(sevabit): This should be combined into the normal search mechanism, we shouldn't have 2 search bars.
     CROW_ROUTE(app, "/search_service_node").methods("GET"_method)
     ([&](const crow::request& req) {
         return lokblocks.show_service_node(remove_bad_chars(string(req.url_params.get("value"))));

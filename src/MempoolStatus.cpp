@@ -340,7 +340,7 @@ MempoolStatus::is_thread_running()
     return is_running;
 }
 
-bf::path MempoolStatus::blockchain_path {"/home/mwo/.loki/lmdb"};
+bf::path MempoolStatus::blockchain_path {"/home/mwo/.sevabit/lmdb"};
 string MempoolStatus::daemon_url {"http:://127.0.0.1:22023"};
 cryptonote::network_type MempoolStatus::nettype {cryptonote::network_type::MAINNET};
 atomic<bool>       MempoolStatus::is_running {false};

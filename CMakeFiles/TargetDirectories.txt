@@ -1,0 +1,14 @@
+/home/pete/sevabit-explorer/CMakeFiles/edit_cache.dir
+/home/pete/sevabit-explorer/CMakeFiles/rebuild_cache.dir
+/home/pete/sevabit-explorer/CMakeFiles/SevaBitBlocks.dir
+/home/pete/sevabit-explorer/ext/CMakeFiles/edit_cache.dir
+/home/pete/sevabit-explorer/ext/CMakeFiles/rebuild_cache.dir
+/home/pete/sevabit-explorer/ext/CMakeFiles/myext.dir
+/home/pete/sevabit-explorer/ext/mstch/CMakeFiles/edit_cache.dir
+/home/pete/sevabit-explorer/ext/mstch/CMakeFiles/rebuild_cache.dir
+/home/pete/sevabit-explorer/ext/mstch/src/CMakeFiles/edit_cache.dir
+/home/pete/sevabit-explorer/ext/mstch/src/CMakeFiles/rebuild_cache.dir
+/home/pete/sevabit-explorer/ext/mstch/src/CMakeFiles/mstch.dir
+/home/pete/sevabit-explorer/src/CMakeFiles/edit_cache.dir
+/home/pete/sevabit-explorer/src/CMakeFiles/rebuild_cache.dir
+/home/pete/sevabit-explorer/src/CMakeFiles/myxrm.dir

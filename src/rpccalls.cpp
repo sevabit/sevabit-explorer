@@ -57,7 +57,7 @@ rpccalls::get_current_height()
 
     if (!r)
     {
-        cerr << "Error connecting to Loki daemon at "
+        cerr << "Error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return 0;
     }
@@ -90,7 +90,7 @@ rpccalls::get_mempool(vector<tx_info>& mempool_txs)
 
     if (!r || res.status != CORE_RPC_STATUS_OK)
     {
-        cerr << "Error connecting to Loki daemon at "
+        cerr << "Error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return false;
     }
@@ -189,14 +189,14 @@ rpccalls::get_network_info(COMMAND_RPC_GET_INFO::response& response)
 
         if (!err.empty())
         {
-            cerr << "Error connecting to Loki daemon due to "
+            cerr << "Error connecting to SevaBit daemon due to "
                  << err << endl;
             return false;
         }
     }
     else
     {
-        cerr << "Error connecting to Loki daemon at "
+        cerr << "Error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return false;
     }
@@ -250,14 +250,14 @@ rpccalls::get_hardfork_info(COMMAND_RPC_HARD_FORK_INFO::response& response)
 
         if (!err.empty())
         {
-            cerr << "Error connecting to Loki daemon due to "
+            cerr << "Error connecting to SevaBit daemon due to "
                  << err << endl;
             return false;
         }
     }
     else
     {
-        cerr << "Error connecting to Loki daemon at "
+        cerr << "Error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return false;
     }
@@ -318,14 +318,14 @@ rpccalls::get_dynamic_per_kb_fee_estimate(
 
         if (!err.empty())
         {
-            cerr << "Error connecting to Loki daemon due to "
+            cerr << "Error connecting to SevaBit daemon due to "
                  << err << endl;
             return false;
         }
     }
     else
     {
-        cerr << "Error connecting to Loki daemon at "
+        cerr << "Error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return false;
     }
@@ -381,14 +381,14 @@ rpccalls::get_block(string const& blk_hash, block& blk, string& error_msg)
 
         if (!err.empty())
         {
-            cerr << "Error connecting to Loki daemon due to "
+            cerr << "Error connecting to SevaBit daemon due to "
                  << err << endl;
             return false;
         }
     }
     else
     {
-        cerr << "get_block: error connecting to Loki daemon at "
+        cerr << "get_block: error connecting to SevaBit daemon at "
              << daemon_url << endl;
         return false;
     }
@@ -423,7 +423,7 @@ rpccalls::get_service_node(COMMAND_RPC_GET_SERVICE_NODES::response &res, const s
     result = epee::net_utils::invoke_http_json("/json_rpc", request, response, m_http_client, timeout_time_ms);
 
     if (!result)
-        cerr << "Error connecting to Loki daemon at " << daemon_url << endl;
+        cerr << "Error connecting to SevaBit daemon at " << daemon_url << endl;
 
     res = response.result;
     return result;
@@ -449,7 +449,7 @@ rpccalls::get_quorum_state(COMMAND_RPC_GET_QUORUM_STATE::response &res, uint64_t
 
     result = epee::net_utils::invoke_http_json("/json_rpc", request, response, m_http_client, timeout_time_ms);
     if (!result)
-        cerr << "Error connecting to Loki daemon at " << daemon_url << endl;
+        cerr << "Error connecting to SevaBit daemon at " << daemon_url << endl;
 
     res = response.result;
     return result;

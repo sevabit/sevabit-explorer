@@ -2,15 +2,15 @@ var config = {
     testnet: false, // this is adjusted page.h if needed. dont need to change manually
     stagenet: false, // this is adjusted page.h if needed. dont need to change manually
     coinUnitPlaces: 9,
-    txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in Loki
-    txCoinbaseMinConfirms: 60, // corresponds to CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW in Loki
-    coinSymbol: 'LOK',
-    openAliasPrefix: "lok",
-    coinName: 'Loki',
-    coinUriPrefix: 'loki:',
-    addressPrefix: 114,
+    txMinConfirms: 10,         // corresponds to CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE in SevaBit
+    txCoinbaseMinConfirms: 60, // corresponds to CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW in SevaBit
+    coinSymbol: 'SEVA',
+    openAliasPrefix: "seva",
+    coinName: 'SevaBit',
+    coinUriPrefix: 'sevabit:',
+    addressPrefix: 0x3ded16,
     integratedAddressPrefix: 115,
-    subAddressPrefix: 116,
+    subAddressPrefix: 88,
     addressPrefixTestnet: 156,
     integratedAddressPrefixTestnet: 157,
     subAddressPrefixTestnet: 158,
