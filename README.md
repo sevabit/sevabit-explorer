@@ -1,4 +1,4 @@
-# Onion SevaBit Blockchain Explorer
+# SevaBit Blockchain Explorer
 
 Currently available SevaBit blockchain explorers have several limitations which are of 
 special importance to privacy-oriented users:
@@ -93,7 +93,7 @@ mkdir build && cd build
 # create the makefile
 cmake ..
 
-# alternatively can use: cmake -DLOKI_DIR=/path/to/sevabit ..
+# alternatively can use: cmake -DSevabit_DIR=/path/to/sevabit ..
 # if sevabit is not in ~/sevabit
 #
 # also can build with ASAN (sanitizers), for example
@@ -721,10 +721,10 @@ curl  -w "\n" -X GET "http://127.0.0.1:8081/api/version"
   "data": {
     "api": 65536,
     "blockchain_height": 1357031,
-    "git_branch_name": "update_to_current_loki",
+    "git_branch_name": "update_to_current_sevabit",
     "last_git_commit_date": "2017-07-25",
     "last_git_commit_hash": "a549f25",
-    "loki_version_full": "0.10.3.1-ab594cfe"
+    "sevabit_version_full": "1.0.0-ab594cfe"
   },
   "status": "success"
 }
