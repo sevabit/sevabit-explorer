@@ -46,7 +46,7 @@ SevaBit C++ libraries, but also demonstrates how to use:
 
 Current development branch:
 
- - https://gitlab.com/Sevabit/SevaBit-explorer
+ - https://github.com/Sevabit/SevaBit-explorer
 
 
 
@@ -82,7 +82,7 @@ as follows:
 cd ~
 
 # download the source code
-git clone https://gitlab.com/Sevabit/SevaBit-explorer.git
+git clone https://github.com/Sevabit/SevaBit-explorer.git
 
 # enter the downloaded sourced code folder
 cd SevaBit-explorer
@@ -693,7 +693,7 @@ Example result:
 #### api/emission
 
 ```bash
-curl  -w "\n" -X GET "http://127.0.0.1:8081/api/emission"
+curl  -w "\n" -X GET "http://127.0.0.1:80/api/emission"
 ```
 
 ```json
