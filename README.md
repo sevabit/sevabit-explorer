@@ -13,7 +13,7 @@ special importance to privacy-oriented users:
 
 
 In this example, these limitations are addressed by development of
-an Onion SevaBit Blockchain Explorer. The example not only shows how to use 
+an SevaBit Blockchain Explorer. The example not only shows how to use 
 SevaBit C++ libraries, but also demonstrates how to use:
 
  - [crow](https://github.com/ipkn/crow) - C++ micro web framework
@@ -21,7 +21,7 @@ SevaBit C++ libraries, but also demonstrates how to use:
  - [json](https://github.com/nlohmann/json) - JSON for Modern C++
  - [fmt](https://github.com/fmtlib/fmt) - Small, safe and fast string formatting library
 
-## Onion SevaBit Blockchain Explorer features
+## SevaBit Blockchain Explorer features
  - no cookies, no web analytics trackers, no images,
  - by default no JavaScript, but can be enabled for client side decoding and proving transactions,
  - open sourced,
